@@ -1,0 +1,41 @@
+[package]
+name = "remarkable-cli"
+version = "0.1.0"
+edition = "2024"
+description = "Cloud Sync v3, native handwriting, and PDF tools for reMarkable"
+license = "MIT"
+
+[[bin]]
+name = "remarkable"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4.6.7", features = ["string"] }
+clap_complete = "4.6"
+cli-command-kit = { path = "../cli-command-kit" }
+remarkable-cloud = { path = "../remarkable-cloud" }
+remarkable-render = { path = "../remarkable-render" }
+rmscene = { path = "../rmscene" }
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "signal", "time"] }
+tracing-subscriber = { version = "0.3", features = ["fmt", "env-filter"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["raw_value", "arbitrary_precision"] }
+thiserror = "2"
+reqwest = { version = "0.13.5", default-features = false }
+hyper = "1"
+dirs = "7"
+comfy-table = { version = "7", default-features = false }
+icu_casemap = "2.3"
+unicode-general-category = "1"
+num-bigint = "0.4"
+tempfile = "3"
+zip = { version = "6", default-features = false, features = ["deflate"] }
+uuid = { version = "1", features = ["v4"] }
+sha2 = "0.11"
+hex = "0.4"
+
+[dev-dependencies]
+libc = "0.2"
+tiny_http = "0.12"
+pdfium-bundled = "0.2"
+

@@ -15,7 +15,7 @@ Independent Rust package producing `remarkable`. Shared rules in [../AGENTS.md](
 - `just fmt` formats only this package; `just lint` runs strict all-target Clippy.
 - `just test` runs native behavioral and subprocess tests.
 - `just coverage` requires at least 90% line coverage; `just check` runs formatting, Clippy, tests, and coverage.
-- Development needs Rust/Cargo, `just`, `cargo-llvm-cov`, and LLVM tools. PDF tests need the sibling render package's pinned PDFium library/cache. The embedded skill validator uses Bun with `--no-env-file`.
+- Development needs Rust/Cargo, `just`, `cargo-llvm-cov`, and LLVM tools. PDF tests need the Git render dependency's pinned PDFium library/cache. The embedded skill validator uses Bun with `--no-env-file`.
 - `just native-import-typecheck` installs locked companion dependencies and runs `tsc --noEmit`; the manual workflow requires Bun 1.4.2+.
 
 ## Contracts and grounding

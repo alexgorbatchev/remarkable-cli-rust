@@ -311,6 +311,7 @@ checksum = "1c133bc6a41be0d194c306b5506d15e6feeea7b1d6604bd3f8310dfb2ca96486"
 [[package]]
 name = "cli-command-kit"
 version = "0.1.0"
+source = "git+https://github.com/alexgorbatchev/cli-command-kit-rust.git?rev=40210e689762f6606776764bb3696e2685198c2e#40210e689762f6606776764bb3696e2685198c2e"
 dependencies = [
  "clap",
  "dirs 7.0.0",
@@ -1679,6 +1680,7 @@ dependencies = [
 [[package]]
 name = "remarkable-cloud"
 version = "0.1.0"
+source = "git+https://github.com/alexgorbatchev/remarkable-cloud-rust.git?rev=c3087d0324323e35dded5a0cce9f82ea11ab9090#c3087d0324323e35dded5a0cce9f82ea11ab9090"
 dependencies = [
  "base64 0.22.1",
  "crc32c",
@@ -1704,6 +1706,7 @@ dependencies = [
 [[package]]
 name = "remarkable-render"
 version = "0.1.0"
+source = "git+https://github.com/alexgorbatchev/remarkable-render-rust.git?rev=28e2cac20bb2a950753627d120dd14c9cfd16985#28e2cac20bb2a950753627d120dd14c9cfd16985"
 dependencies = [
  "image",
  "pdfium-bundled",
@@ -1793,6 +1796,7 @@ dependencies = [
 [[package]]
 name = "rmscene"
 version = "0.1.0"
+source = "git+https://github.com/alexgorbatchev/rmscene-rust.git?rev=13956586612431995d3481875e945917d0b2d0d9#13956586612431995d3481875e945917d0b2d0d9"
 
 [[package]]
 name = "roxmltree"
